@@ -15,7 +15,6 @@ const getAction = type => extraAction.map(action => action[type]);
 
 const handlePending = state => {
   state.contacts.isLoading = true;
-  console.log(state.contacts.isLoading, 'handlePending')
   state.contacts.error = null;
 };
 
